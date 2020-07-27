@@ -1,5 +1,3 @@
-/* вычисление определённого интеграла от функции
-2 * (sinx) ^ 2 + ln(x) на интервале от 1 до 5 */
 #include <stdio.h>
 #include <math.h>
 
@@ -27,11 +25,11 @@ double Calculation(double a, double b, int numIntervals)
 {
 	double result = 0;
 	double x = a;
-	double step = (a + b) / numIntervals; //шаг разбиения
+	double step = (a + b) / numIntervals; 
 	while (x < b)
 	{
-		result += (2 * (pow(sin(x+step/2), 2)) + log(x+step/2)) * step; //вычисление площади одного из прямоугольников (метод средних прямоугольников)
-		x += step;  //изменение переменной на шаг
+		result += (2 * (pow(sin(x+step/2), 2)) + log(x+step/2)) * step; 
+		x += step;  
 	}
 
 	return result;
