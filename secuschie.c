@@ -7,9 +7,9 @@ double func(double x);
 
 int main() 
 {
-	double x0=1.6;//начало интервала для поиска корней
-	double x1=2;//конец интервала для поиска корней
-	double e =0.0001;//точность
+	double x0=1.6;
+	double x1=2;
+	double e =0.0001;
 	double x=find(x0,x1,e);
   printf("Poluchen rezultat %lf ",x);
   double pogreshnost = func(x);
